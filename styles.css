@@ -132,7 +132,6 @@ main {
 	padding: 20px 25px;
 	gap: 5px;
 	grid-template-columns: 1fr 20fr;
-	justify-content: center;
 }
 
 .search-logo {
@@ -148,16 +147,21 @@ main {
 .notification-profile-section {
 	grid-area: 1 / 2;
 	display: grid;
-	grid-template-columns: 1fr 1fr 3fr;
-	justify-content: center;
+	align-items: center;
 }
 
+.notification-profile-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 3fr;
+	gap: 20px;
+	margin-left: 8rem;
+	margin-bottom: 1.5rem;
+}
 .notification-button-section {
 	grid-column: 1;
 	display: grid;
 	justify-content: center;
 	align-items: center;
-	border: 1px black solid;
 }
 
 .notification-button {
@@ -174,6 +178,9 @@ main {
 }
 .greeting-media-bar {
 	grid-area: 2 / 1;
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	grid-template-rows: 1fr 2fr; 
 }
 
 .media-button-grid {
